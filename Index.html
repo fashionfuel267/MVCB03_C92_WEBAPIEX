@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Consume Web API </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <script>
+        $(document).ready(function () {
+            $.get("https://localhost:7063/api/DoctorsDept", function (data, status) {
+                /*alert("Data: " + data + "\nStatus: " + status);*/
+                console.log(data)
+                console.log(status)
+            })
+        })
+    </script>
+</body>
+</html>
